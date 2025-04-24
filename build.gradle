@@ -8,13 +8,13 @@ plugins {
   id "application"
   // Manage optional dependencies in maven pom.
   id "nebula.optional-base" version "7.0.0"
-  id "com.github.spotbugs" version "5.2.5"
+  id "com.github.spotbugs" version "6.0.2"
   id "io.freefair.lombok" version "6.5.1"
   id "org.owasp.dependencycheck" version "8.2.1"
 }
 
 ext {
-  releaseVersion = project.findProperty("releaseVersion") ?: "4.6-SNAPSHOT"
+  releaseVersion = project.findProperty("releaseVersion") ?: "4.9-SNAPSHOT"
   nexusBaseUrl = project.findProperty("nexusBaseUrl") ?: "https://nexus.adaptris.net/nexus"
   mavenPublishPath = project.findProperty("mavenPublishPath") ?: "/content/repositories/snapshots"
   mavenPublishUrl = project.findProperty("mavenPublishUrl") ?: nexusBaseUrl + mavenPublishPath
@@ -302,8 +302,8 @@ task deleteGeneratedFiles(type: Delete) {
 }
 
 spotbugsMain {
-  effort = "max"
-  reportLevel = "high"
+  effort = com.github.spotbugs.snom.Effort.valueOf("MAX")
+  reportLevel = com.github.spotbugs.snom.Confidence.valueOf("HIGH")
   // showProgress = "true"
   effort = "max"
   // Ignore failures?
