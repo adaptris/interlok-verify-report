@@ -10,7 +10,7 @@ plugins {
   id "nebula.optional-base" version "7.0.0"
   id "com.github.spotbugs" version "5.2.5"
   id "io.freefair.lombok" version "8.13.1"
-  id "org.owasp.dependencycheck" version "8.2.1"
+  id "org.owasp.dependencycheck" version "12.1.6"
 }
 
 ext {
