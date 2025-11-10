@@ -140,7 +140,7 @@ dependencies {
   testImplementation ("org.junit.jupiter:junit-jupiter-engine:5.12.2")
   testImplementation ("org.junit.platform:junit-platform-launcher:1.12.1")
 	
-  testImplementation ("commons-io:commons-io:2.18.0")
+  testImplementation ("commons-io:commons-io:2.21.0")
 }
 
 jar {
