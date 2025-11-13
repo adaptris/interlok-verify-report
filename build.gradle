@@ -133,7 +133,7 @@ dependencies {
   // Dependency to platform/BOM
   implementation (platform("com.fasterxml.jackson:jackson-bom:$jacksonVersion"))
   implementation ("com.fasterxml.jackson.core:jackson-databind")
-  implementation ("commons-cli:commons-cli:1.9.0")
+  implementation ("commons-cli:commons-cli:1.11.0")
 
   umlDoclet("nl.talsmasoftware:umldoclet:2.2.1")
 
